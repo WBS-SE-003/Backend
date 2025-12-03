@@ -1,0 +1,26 @@
+{
+  "name": "crudcli",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "main": "app.ts",
+  "type": "module",
+  "imports": {
+    "#db": "./src/db/index.ts",
+    "#models": "./src/models/index.ts"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/app.ts"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "mongoose": "^9.0.0"
+  }
+}
