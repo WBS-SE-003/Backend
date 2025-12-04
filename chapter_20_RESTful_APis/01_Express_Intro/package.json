@@ -1,0 +1,21 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "main": "app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/app.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
