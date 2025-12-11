@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use('/auth', authRouter);
 app.use('/posts', postRouter);
 
-// GLOBAL MIDDLEWARES
+// ERROR HANDLER
 app.use(errorHandler);
 
 app.listen(port, () =>

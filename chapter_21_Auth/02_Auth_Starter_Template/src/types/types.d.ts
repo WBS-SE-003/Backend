@@ -14,19 +14,3 @@ declare global {
     }
   }
 }
-
-// This section extends the Express Request type with
-// a custom 'user' property.
-
-// Normally, types like 'Request' and 'RequestHandler'
-// do not include a 'user' field (e.g., only 'req.id', 'req.body', etc.).
-
-// By adding this, we ensure 'req.user' and 'req.user.roles'
-// are available throughout the request lifecycle.
-
-// .d.ts files only provide type definitions
-// and are not compiled to JavaScript.
-
-// We use types.d.ts to define global or project-specific types,
-//  grouping them with namespaces and describing object
-// structures with interfaces.
