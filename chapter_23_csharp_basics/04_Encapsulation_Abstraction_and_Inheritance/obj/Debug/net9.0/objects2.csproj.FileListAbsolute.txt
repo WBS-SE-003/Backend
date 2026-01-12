@@ -1,0 +1,14 @@
+C:\Users\onure\Desktop\objects2\bin\Debug\net9.0\objects2.exe
+C:\Users\onure\Desktop\objects2\bin\Debug\net9.0\objects2.deps.json
+C:\Users\onure\Desktop\objects2\bin\Debug\net9.0\objects2.runtimeconfig.json
+C:\Users\onure\Desktop\objects2\bin\Debug\net9.0\objects2.dll
+C:\Users\onure\Desktop\objects2\bin\Debug\net9.0\objects2.pdb
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.AssemblyInfoInputs.cache
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.AssemblyInfo.cs
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.csproj.CoreCompileInputs.cache
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.dll
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\refint\objects2.dll
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.pdb
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\objects2.genruntimeconfig.cache
+C:\Users\onure\Desktop\objects2\obj\Debug\net9.0\ref\objects2.dll
