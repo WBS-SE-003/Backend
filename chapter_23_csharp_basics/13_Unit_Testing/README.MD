@@ -1,6 +1,4 @@
-0️⃣ Project Structure
-
-## 🏗️ Project Structure (Very Important)
+##  Project Structure
 
 In .NET, tests live in a **separate project**.
 
