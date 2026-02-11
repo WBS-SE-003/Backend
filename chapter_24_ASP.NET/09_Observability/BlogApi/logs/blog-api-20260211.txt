@@ -1,0 +1,111 @@
+2026-02-11 09:31:49.915 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5001
+2026-02-11 09:31:49.936 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2026-02-11 09:31:49.936 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2026-02-11 09:31:49.937 [INF] Microsoft.Hosting.Lifetime: Content root path: C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi
+2026-02-11 09:31:53.964 [INF] Microsoft.Hosting.Lifetime: Application is shutting down...
+2026-02-11 09:50:41.069 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5001
+2026-02-11 09:50:41.090 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2026-02-11 09:50:41.091 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2026-02-11 09:50:41.092 [INF] Microsoft.Hosting.Lifetime: Content root path: C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi
+2026-02-11 09:50:44.954 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET / responded 404 in 0.3213 ms
+2026-02-11 09:50:57.690 [ERR] Microsoft.EntityFrameworkCore.Database.Command: Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."CreatedAt", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+2026-02-11 09:50:57.700 [ERR] Microsoft.EntityFrameworkCore.Query: An exception occurred while iterating over the results of a query for context type 'BlogApi.Infrastructure.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-02-11 09:50:57.708 [ERR] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 500 in 635.0014 ms
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BlogApi.Services.UserService.ListAsync() in C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi\Services\UserService.cs:line 28
+   at BlogApi.Endpoints.UserEndpoints.<>c.<<MapUserEndpoints>b__0_0>d.MoveNext() in C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi\Api\UserEndpoints.cs:line 15
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-11 09:50:57.724 [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BlogApi.Services.UserService.ListAsync() in C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi\Services\UserService.cs:line 28
+   at BlogApi.Endpoints.UserEndpoints.<>c.<<MapUserEndpoints>b__0_0>d.MoveNext() in C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi\Api\UserEndpoints.cs:line 15
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-11 09:51:17.942 [INF] Microsoft.Hosting.Lifetime: Application is shutting down...
+2026-02-11 09:52:19.359 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5001
+2026-02-11 09:52:19.379 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2026-02-11 09:52:19.380 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2026-02-11 09:52:19.381 [INF] Microsoft.Hosting.Lifetime: Content root path: C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi
+2026-02-11 09:52:23.063 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /users responded 200 in 518.4233 ms
+2026-02-11 09:53:26.360 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /scalar responded 302 in 2.0080 ms
+2026-02-11 09:53:26.427 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /scalar/ responded 200 in 62.9383 ms
+2026-02-11 09:53:26.455 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.4522 ms
+2026-02-11 09:53:26.467 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /scalar/scalar.js responded 200 in 16.6411 ms
+2026-02-11 09:53:26.715 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /openapi/v1.json responded 200 in 76.2350 ms
+2026-02-11 09:54:06.859 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 221.4396 ms
+2026-02-11 09:54:31.867 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 400 in 6.3820 ms
+2026-02-11 09:55:05.550 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /users responded 201 in 51.3183 ms
+2026-02-11 09:56:40.609 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 55.7735 ms
+2026-02-11 09:56:45.232 [INF] Microsoft.Hosting.Lifetime: Application is shutting down...
+2026-02-11 09:56:55.156 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5001
+2026-02-11 09:56:55.176 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2026-02-11 09:56:55.177 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2026-02-11 09:56:55.178 [INF] Microsoft.Hosting.Lifetime: Content root path: C:\Users\onure\Desktop\dotnet-blog-api-observability\BlogApi
+2026-02-11 09:57:04.878 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 400 in 719.6483 ms
+2026-02-11 09:57:15.699 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 166.1626 ms
+2026-02-11 09:58:11.766 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 80.6679 ms
+2026-02-11 09:58:21.751 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 46.5668 ms
+2026-02-11 09:58:24.836 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 41.5205 ms
+2026-02-11 09:58:26.547 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 58.9910 ms
+2026-02-11 09:59:12.612 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 56.4087 ms
+2026-02-11 09:59:39.648 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health responded 200 in 26.3135 ms
+2026-02-11 10:00:20.129 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health/ready responded 200 in 2.9033 ms
+2026-02-11 10:00:27.085 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health/live responded 200 in 3.0386 ms
